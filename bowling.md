@@ -1,23 +1,31 @@
 # Bowling Score Calculator
 
+Welcome to the Bowling Score Calculator exercise, a hands-on coding challenge designed to refine your programming skills through the practice of test-driven development (TDD). This exercise is flexible, allowing you to select the programming language of your choice, encouraging experimentation, and showcasing different techniques. Whether you're a beginner or an experienced developer, this task aims to enhance your understanding of software development principles while providing a practical application to apply those concepts.
+
 ## Bowling Scoring Rules
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Ten-pin_bowling#Scoring)
+Before diving into the coding challenge, let's briefly review the traditional scoring rules for ten-pin bowling, as understanding these rules is crucial for implementing the score calculator accurately. For a detailed explanation, refer to [Wikipedia](https://en.wikipedia.org/wiki/Ten-pin_bowling#Scoring).
 
-In traditional scoring, one point is scored for each pin that is knocked over, and when less than all ten pins are knocked down in two rolls in a frame (an open frame), the frame is scored with the total number of pins knocked down. However, when all ten pins are knocked down with either the first or second rolls of a frame (a mark), bonus pins are awarded as follows:
+- **Strike**: Knocking down all ten pins with the first ball (marked "X"). The score for the frame is ten plus the total pins knocked down in the next two rolls.
+- **Spare**: Knocking down all remaining pins with the second ball (marked "/"). The score for the frame is ten plus the pins knocked down in the next roll.
+- **Open Frame**: When neither a strike nor spare is achieved, the frame's score is simply the total number of pins knocked down in those two rolls.
 
-- Strike: When all ten pins are knocked down on the first roll (marked "X" on the scorescreen), the frame receives ten pins plus a bonus of pinfall on the next two rolls (not necessarily the next two frames). A strike in the tenth (final) frame receives two extra rolls for bonus pins.
-- Spare: When a second roll of a frame is needed to knock down all ten pins (marked "/" on the scorescreen), the frame receives ten pins plus a bonus of pinfall in the next roll (not necessarily the next frame). A spare in the first two rolls in the tenth (final) frame receives a third roll for bonus pins.
-
-The maximum score is 300, achieved by getting twelve strikes in a row within the same game (known as a perfect game).
+A perfect game scores 300 points, achieved by rolling twelve consecutive strikes.
 
 ## Application Description
 
-Create a service or function that will track scoring for a bowling game. This is a training tool used to help mentor junior developers.
+Your task is to create a service or function capable of tracking and calculating the score of a single game of bowling, adhering to the traditional scoring rules.
 
-### Noteworthy Requirements for Mentees
+### Requirements
 
-- The API of the program should be simple.
-- Be consistent with language (e.g. "roll" and "throw" are often used, just pick one and stick with it).
-- Only valid rolls/throws should be accepted by the application (e.g. 0-10 pins, no more than 10 total pins in a standard frame, etc.)
-- One should not be able to make rolls/throws outside of the intended API functions, properties, etc.
+- **Simple API**: Design the program's interface to be intuitive and straightforward.
+- **Consistent Terminology**: Choose consistent terminology throughout your code (e.g., decide between "roll" and "throw" and stick with it).
+- **Validations**: Ensure that only valid inputs are accepted (e.g., 0-10 pins per roll, no more than 10 pins in a standard frame).
+- **Test Coverage**: Aim for 100% test coverage, demonstrating the principles of test-driven development.
+
+### Suggestions
+
+- **Incremental Development**: Start by writing a test that describes a specific behavior, then write the minimal amount of code required to pass that test. This approach not only helps in building the application piece by piece but also ensures that each part is tested thoroughly.
+- **Adaptability**: Allow yourself the flexibility to revisit and adjust your approach as needed. The process of development is iterative, and improvements can always be made.
+
+This exercise is an opportunity to practice and understand test-driven development deeply. By focusing on writing tests before implementing functionality, you'll gain insights into designing more reliable, maintainable, and bug-free code. Enjoy the process of learning and discovery, and remember, the journey is as rewarding as the outcome. Happy coding!
